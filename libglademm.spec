@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.0/%{name}-%{version}.tar.bz2
+# Source0-md5:	4e4e6d035f687c00d4198672025d04bf
 URL:		http://www.gnome.org/
 BuildRequires:	libglade2-devel >= 1.99.11
 BuildRequires:	gtkmm-devel >= 2.0.2
