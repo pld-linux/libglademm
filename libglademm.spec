@@ -1,14 +1,14 @@
 Summary:	C++ wrappers for libglade
 Summary(pl):	Interfejsy C++ dla libglade
 Name:		libglademm
-Version:	2.3.2
-Release:	3
+Version:	2.3.3
+Release:	1
 License:	GPL
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.3/%{name}-%{version}.tar.bz2
-# Source0-md5:	d0eab79c6403b813aacd4bc5728113f6
+# Source0-md5:	324d3dc2354996b52797e66d0a7bca64
 URL:		http://www.gnome.org/
-BuildRequires:	gtkmm-devel >= 2.3.6
+BuildRequires:	gtkmm-devel >= 2.3.7
 BuildRequires:	libglade2-devel >= 2.3.2
 BuildRequires:	perl-base
 BuildRequires:	pkgconfig
@@ -25,7 +25,7 @@ Summary:	Devel files for libglademm
 Summary(pl):	Pliki nag³ówkowe dla libglademm
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	gtkmm-devel >= 2.3.6
+Requires:	gtkmm-devel >= 2.3.7
 
 %description devel
 Devel files for libglademm.
@@ -90,7 +90,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/libglademm*.so
 %{_libdir}/libglademm*.la
 %{_includedir}/%{name}-2.4
-%{_libdir}/%{name}-2.0
 %{_libdir}/%{name}-2.4
 %{_pkgconfigdir}/%{name}-2.4.pc
 
