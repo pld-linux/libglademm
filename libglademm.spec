@@ -1,15 +1,15 @@
 Summary:	C++ wrappers for libglade
 Summary(pl):	Interfejsy C++ dla libglade
 Name:		libglademm
-Version:	2.3.0
-Release:	2
+Version:	2.3.1
+Release:	1
 License:	GPL
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.3/%{name}-%{version}.tar.bz2
-# Source0-md5:	2f23868e9f203ca6c4058ebd23ca07e6
+# Source0-md5:	130e47e14f1fc57946e442b16fa12240
 URL:		http://www.gnome.org/
-BuildRequires:	gtkmm-devel >= 2.3.2
-BuildRequires:	libglade2-devel >= 2.3.0
+BuildRequires:	gtkmm-devel >= 2.3.3
+BuildRequires:	libglade2-devel >= 2.3.2
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -24,7 +24,7 @@ Summary:	Devel files for libglademm
 Summary(pl):	Pliki nag³ówkowe dla libglademm
 Group:		Development/Libraries
 Requires:	%{name} = %{version}
-Requires:	gtkmm-devel >= 2.3.2
+Requires:	gtkmm-devel >= 2.3.3
 
 %description devel
 Devel files for libglademm.
@@ -44,6 +44,18 @@ libglademm static library.
 %description static -l pl
 Biblioteka statyczna libglademm.
 
+%package doc
+Summary:	Documentation for libglademm
+Summary(pl):	Dokumentacja dla libglademm
+Group:		Documentation
+Requires:	devhelp
+
+%description doc
+Documentation for libglademm.
+
+%description devel -l pl
+Dokumentacja dla libglademm.
+
 %prep
 %setup -q
 
@@ -58,6 +70,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+mv -f $RPM_BUILD_ROOT%{_docdir}/gnomemm-2.6/%{name}-2.4/docs installed-docs
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -82,3 +96,8 @@ rm -rf $RPM_BUILD_ROOT
 %files static
 %defattr(644,root,root,755)
 %{_libdir}/libglademm*.a
+
+%files doc
+%defattr(644,root,root,755)
+%doc installed-docs/*
+%doc %{_datadir}/devhelp/books/%{name}-2.4
