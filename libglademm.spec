@@ -1,17 +1,17 @@
 Summary:	C++ wrappers for libglade
 Summary(pl):	Interfejsy C++ dla libglade
 Name:		libglademm
-Version:	2.4.1
-Release:	3
+Version:	2.5.1
+Release:	1
 License:	GPL
 Group:		Libraries
-Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.4/%{name}-%{version}.tar.bz2
-# Source0-md5:	81688d8499028aee8132db48a71e90eb
+Source0:	http://ftp.gnome.org/pub/gnome/sources/libglademm/2.5/%{name}-%{version}.tar.bz2
+# Source0-md5:	2acc1456c389756bb67d0b4fd9a26a2e
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gtkmm-devel >= 2.4.1
-BuildRequires:	libglade2-devel >= 1:2.4.0
+BuildRequires:	gtkmm-devel >= 2.5.5
+BuildRequires:	libglade2-devel >= 1:2.5.0
 BuildRequires:	libtool >= 2:1.4d
 BuildRequires:	perl-base
 BuildRequires:	pkgconfig
@@ -28,8 +28,8 @@ Summary:	Devel files for libglademm
 Summary(pl):	Pliki nag³ówkowe dla libglademm
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Requires:	gtkmm-devel >= 2.4.1
-Requires:	libglade2-devel >= 1:2.4.0
+Requires:	gtkmm-devel >= 2.5.5
+Requires:	libglade2-devel >= 1:2.5.0
 
 %description devel
 Devel files for libglademm.
