@@ -10,6 +10,7 @@ Source0:	http://ftp.gnome.org/pub/gnome/sources/%{name}/2.1/%{name}-%{version}.t
 URL:		http://www.gnome.org/
 BuildRequires:	gtkmm-devel >= 2.2.8
 BuildRequires:	libglade2-devel >= 2.0.1
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
