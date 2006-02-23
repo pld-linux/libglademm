@@ -1,12 +1,12 @@
 Summary:	C++ wrappers for libglade
 Summary(pl):	Interfejsy C++ dla libglade
 Name:		libglademm
-Version:	2.6.1
+Version:	2.6.2
 Release:	1
 License:	GPL
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/gnome/sources/libglademm/2.6/%{name}-%{version}.tar.bz2
-# Source0-md5:	0e9dd1e7b0e3170b56c50e5c4630fe95
+# Source0-md5:	431a7d04514cabe26fcaedd7767b6a93
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
