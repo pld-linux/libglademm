@@ -1,5 +1,5 @@
 Summary:	C++ wrappers for libglade
-Summary(pl):	Interfejsy C++ dla libglade
+Summary(pl.UTF-8):   Interfejsy C++ dla libglade
 Name:		libglademm
 Version:	2.6.3
 Release:	2
@@ -20,12 +20,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 C++ wrappers for libglade.
 
-%description -l pl
+%description -l pl.UTF-8
 Interfejsy C++ dla libglade.
 
 %package devel
 Summary:	Devel files for libglademm
-Summary(pl):	Pliki nag≥Ûwkowe dla libglademm
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe dla libglademm
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	gtkmm-devel >= 2.10.0
@@ -34,31 +34,31 @@ Requires:	libglade2-devel >= 1:2.6.0
 %description devel
 Devel files for libglademm.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe dla libglademm.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe dla libglademm.
 
 %package static
 Summary:	libglademm static library
-Summary(pl):	Biblioteka statyczna libglademm
+Summary(pl.UTF-8):   Biblioteka statyczna libglademm
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 libglademm static library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Biblioteka statyczna libglademm.
 
 %package doc
 Summary:	Documentation for libglademm
-Summary(pl):	Dokumentacja dla libglademm
+Summary(pl.UTF-8):   Dokumentacja dla libglademm
 Group:		Documentation
 Requires:	devhelp
 
 %description doc
 Documentation for libglademm.
 
-%description devel -l pl
+%description devel -l pl.UTF-8
 Dokumentacja dla libglademm.
 
 %prep
