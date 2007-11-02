@@ -3,8 +3,8 @@ Summary(pl.UTF-8):	Interfejsy C++ dla libglade
 Name:		libglademm
 Version:	2.6.5
 Release:	1
-License:	GPL
-Group:		Libraries
+License:	LGPL v2+
+Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/libglademm/2.6/%{name}-%{version}.tar.bz2
 # Source0-md5:	4d868c9c1bef2480c47d07ef63619e27
 URL:		http://www.gnome.org/
@@ -26,7 +26,7 @@ Interfejsy C++ dla libglade.
 %package devel
 Summary:	Devel files for libglademm
 Summary(pl.UTF-8):	Pliki nagłówkowe dla libglademm
-Group:		Development/Libraries
+Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	gtkmm-devel >= 2.12.1
 Requires:	libglade2-devel >= 1:2.6.2
@@ -40,7 +40,7 @@ Pliki nagłówkowe dla libglademm.
 %package static
 Summary:	libglademm static library
 Summary(pl.UTF-8):	Biblioteka statyczna libglademm
-Group:		Development/Libraries
+Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
