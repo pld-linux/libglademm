@@ -1,12 +1,15 @@
+# TODO:
+# - examples subpackage
+#
 Summary:	C++ wrappers for libglade
 Summary(pl.UTF-8):	Interfejsy C++ dla libglade
 Name:		libglademm
-Version:	2.6.5
+Version:	2.6.6
 Release:	1
 License:	LGPL v2+
 Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/libglademm/2.6/%{name}-%{version}.tar.bz2
-# Source0-md5:	4d868c9c1bef2480c47d07ef63619e27
+# Source0-md5:	c4b2440d5e816ff4d692a246bce55dfb
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -90,19 +93,20 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS
-%attr(755,root,root) %{_libdir}/libglademm*.so.*.*.*
+%attr(755,root,root) %{_libdir}/libglademm-2.4.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libglademm-2.4.so.1
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/libglademm*.so
-%{_libdir}/libglademm*.la
-%{_includedir}/%{name}-2.4
-%{_libdir}/%{name}-2.4
-%{_pkgconfigdir}/%{name}-2.4.pc
+%attr(755,root,root) %{_libdir}/libglademm-2.4.so
+%{_libdir}/libglademm-2.4.la
+%{_includedir}/libglademm-2.4
+%{_libdir}/libglademm-2.4
+%{_pkgconfigdir}/libglademm-2.4.pc
 
 %files static
 %defattr(644,root,root,755)
-%{_libdir}/libglademm*.a
+%{_libdir}/libglademm-2.4.a
 
 %files doc
 %defattr(644,root,root,755)
