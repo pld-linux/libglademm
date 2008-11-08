@@ -61,7 +61,7 @@ Requires:	devhelp
 %description doc
 Documentation for libglademm.
 
-%description devel -l pl.UTF-8
+%description doc -l pl.UTF-8
 Dokumentacja dla libglademm.
 
 %prep
