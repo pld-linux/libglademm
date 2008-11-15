@@ -10,7 +10,7 @@ License:	LGPL v2+
 Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/libglademm/2.6/%{name}-%{version}.tar.bz2
 # Source0-md5:	f9ca5b67f6c551ea98790ab5f21c19d0
-URL:		http://www.gnome.org/
+URL:		http://www.gtkmm.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gtkmm-devel >= 2.12.1
