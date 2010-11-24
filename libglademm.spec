@@ -5,7 +5,7 @@ Summary:	C++ wrappers for libglade
 Summary(pl.UTF-8):	Interfejsy C++ dla libglade
 Name:		libglademm
 Version:	2.6.7
-Release:	4
+Release:	5
 License:	LGPL v2+
 Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/libglademm/2.6/%{name}-%{version}.tar.bz2
