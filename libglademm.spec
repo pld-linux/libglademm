@@ -5,7 +5,7 @@ Summary:	C++ wrappers for libglade
 Summary(pl.UTF-8):	Interfejsy C++ dla libglade
 Name:		libglademm
 Version:	2.6.7
-Release:	5
+Release:	6
 License:	LGPL v2+
 Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/libglademm/2.6/%{name}-%{version}.tar.bz2
@@ -83,6 +83,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 mv -f $RPM_BUILD_ROOT%{_docdir}/gnomemm-2.6/%{name}-2.4/docs installed-docs
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/libglademm-2.4.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -99,7 +100,6 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libglademm-2.4.so
-%{_libdir}/libglademm-2.4.la
 %{_includedir}/libglademm-2.4
 %{_libdir}/libglademm-2.4
 %{_pkgconfigdir}/libglademm-2.4.pc
