@@ -11,11 +11,8 @@ Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/libglademm/2.6/%{name}-%{version}.tar.bz2
 # Source0-md5:	f9ca5b67f6c551ea98790ab5f21c19d0
 URL:		http://www.gtkmm.org/
-BuildRequires:	autoconf
-BuildRequires:	automake
 BuildRequires:	gtkmm-devel >= 2.12.1
 BuildRequires:	libglade2-devel >= 1:2.6.2
-BuildRequires:	libtool >= 2:1.4d
 BuildRequires:	perl-base
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -68,10 +65,6 @@ Dokumentacja dla libglademm.
 %setup -q
 
 %build
-%{__libtoolize}
-%{__aclocal} -I scripts
-%{__autoconf}
-%{__automake}
 %configure \
 	--enable-static
 %{__make}
