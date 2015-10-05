@@ -5,12 +5,14 @@ Summary:	C++ wrappers for libglade
 Summary(pl.UTF-8):	Interfejsy C++ dla libglade
 Name:		libglademm
 Version:	2.6.7
-Release:	7
+Release:	8
 License:	LGPL v2+
 Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/libglademm/2.6/%{name}-%{version}.tar.bz2
 # Source0-md5:	f9ca5b67f6c551ea98790ab5f21c19d0
+Patch0:		no-get_defs-in-gcc5.patch
 URL:		http://www.gtkmm.org/
+BuildRequires:	glibmm-devel
 BuildRequires:	gtkmm-devel >= 2.12.1
 BuildRequires:	libglade2-devel >= 1:2.6.2
 BuildRequires:	perl-base
@@ -63,8 +65,14 @@ Dokumentacja dla libglademm.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
+%{__libtoolize}
+%{__aclocal} -I scripts
+%{__autoconf}
+%{__automake}
+export CXXFLAGS="%{rpmcxxflags} -std=c++11"
 %configure \
 	--enable-static
 %{__make}
